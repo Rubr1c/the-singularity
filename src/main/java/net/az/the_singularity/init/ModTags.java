@@ -1,0 +1,4 @@
+package net.az.the_singularity.init;
+
+public class ModTags {
+}

@@ -1,6 +1,7 @@
 package net.az.the_singularity;
 
 import com.mojang.logging.LogUtils;
+import net.az.the_singularity.init.ModBlocks;
 import net.az.the_singularity.init.ModItems;
 import net.az.the_singularity.init.ModTabs;
 import net.minecraftforge.common.MinecraftForge;
@@ -20,6 +21,7 @@ public class Singularity {
         final IEventBus modEventBus = context.getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
         ModTabs.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);

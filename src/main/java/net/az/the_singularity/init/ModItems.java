@@ -1,6 +1,7 @@
 package net.az.the_singularity.init;
 
 import net.az.the_singularity.Singularity;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -17,6 +18,10 @@ public class ModItems {
             "singularity_shard", () -> new Item(new Item.Properties())
     );
 
+    public static final RegistryObject<Item> DEEPSLATE_SINGULARITY_SHARD_ORE = create(
+            "singularity_shard_ore",
+            () -> new BlockItem(ModBlocks.SINGULARITY_SHARD_ORE.get(), new Item.Properties())
+    );
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

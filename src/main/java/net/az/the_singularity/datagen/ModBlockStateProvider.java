@@ -1,6 +1,7 @@
 package net.az.the_singularity.datagen;
 
 import net.az.the_singularity.Singularity;
+import net.az.the_singularity.init.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
@@ -14,7 +15,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-
+        blockWithItem(ModBlocks.SINGULARITY_SHARD_ORE);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

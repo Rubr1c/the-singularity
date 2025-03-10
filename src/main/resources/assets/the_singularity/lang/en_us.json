@@ -1,4 +1,6 @@
 {
   "item.the_singularity.singularity_shard": "Singularity Shard",
+  "item.the_singularity.singularity_shard_ore": "Singularity Shard Ore",
+  "block.the_singularity.singularity_shard_ore": "Singularity Shard Ore",
   "creative_tab.singularity": "Singularity"
 }
