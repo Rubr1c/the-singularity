@@ -2,6 +2,7 @@ package net.az.the_singularity;
 
 import com.mojang.logging.LogUtils;
 import net.az.the_singularity.init.ModItems;
+import net.az.the_singularity.init.ModTabs;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -18,7 +19,8 @@ public class Singularity {
     public Singularity(FMLJavaModLoadingContext context) {
         final IEventBus modEventBus = context.getModEventBus();
 
-        ModItems.ITEMS.register(modEventBus);
+        ModItems.register(modEventBus);
+        ModTabs.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
     }

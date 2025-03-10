@@ -18,7 +18,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        
+        simpleItem(ModItems.SINGULARITY_SHARD);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
