@@ -1,8 +1,10 @@
 package net.az.the_singularity.init;
 
 import net.az.the_singularity.Singularity;
+import net.az.the_singularity.blocks.AstraliteOre;
 import net.az.the_singularity.blocks.SingularityShardOre;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -15,6 +17,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> SINGULARITY_SHARD_ORE = BLOCKS.register(
             "singularity_shard_ore",
             () -> new SingularityShardOre()
+    );
+
+    public static final RegistryObject<Block> ASTRALITE_ORE = BLOCKS.register(
+            "astralite_ore",
+            () -> new AstraliteOre()
     );
 
     public static void register(IEventBus eventBus) {

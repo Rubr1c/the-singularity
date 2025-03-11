@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "the_singularity:astralite_ore",
     "the_singularity:singularity_shard_ore"
   ]
 }

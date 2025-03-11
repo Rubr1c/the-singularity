@@ -28,7 +28,7 @@ public class ModTabs {
             "singularity",
             () -> CreativeModeTab.builder()
                     .icon(() -> new ItemStack(ModItems.SINGULARITY_SHARD.get()))
-                    .title(Component.translatable("creative_tab.singularity"))
+                    .title(Component.translatable("creative_tab.the_singularity.singularity"))
                     .displayItems(((itemDisplayParameters, output) -> {
                         SINGULARITY_TAB_ITEMS.forEach(item -> output.accept(item.get()));
                     }))

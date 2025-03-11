@@ -16,6 +16,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.SINGULARITY_SHARD_ORE);
+        blockWithItem(ModBlocks.ASTRALITE_ORE);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

@@ -19,6 +19,9 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> SINGULARITY_SHARD_ORE_PLACED_KEY =
             registerKey("singularity_shard_ore_paced");
 
+    public static final ResourceKey<PlacedFeature> ASTRALITE_ORE_PLACED_KEY =
+            registerKey("astralite_ore_placed");
+
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
         register(context, SINGULARITY_SHARD_ORE_PLACED_KEY,
@@ -27,6 +30,14 @@ public class ModPlacedFeatures {
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(-64),
                                 VerticalAnchor.absolute(-55))));
+
+        register(context, ASTRALITE_ORE_PLACED_KEY,
+                configuredFeatures.getOrThrow(ModConfiguredFeatures.END_ASTRALITE_ORE),
+                ModOrePlacement.rareOrePlacement(4,
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(0),
+                                VerticalAnchor.absolute(40)
+                        )));
     }
 
 

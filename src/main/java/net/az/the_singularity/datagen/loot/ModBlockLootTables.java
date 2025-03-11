@@ -23,10 +23,13 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-
         this.add(ModBlocks.SINGULARITY_SHARD_ORE.get(),
                 block -> createNoFortuneOreDrop(ModBlocks.SINGULARITY_SHARD_ORE.get(),
-                                        ModItems.SINGULARITY_SHARD.get()));
+                                                ModItems.SINGULARITY_SHARD.get()));
+
+        this.add(ModBlocks.ASTRALITE_ORE.get(),
+                block -> createOreDrop(ModBlocks.ASTRALITE_ORE.get(),
+                                       ModItems.ASTRALITE_GEM.get()));
     }
 
     @Override

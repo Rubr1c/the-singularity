@@ -30,6 +30,8 @@ public class ModItemModelProvider extends ItemModelProvider {
                               List.of(5.0f, 10.0f, 15.0f, 20.0f, 25.0f,
                                       30.0f, 35.0f, 40.0f, 45.0f, 50.0f, 55.0f, 60.0f)
                       ));
+
+        simpleItem(ModItems.ASTRALITE_GEM);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

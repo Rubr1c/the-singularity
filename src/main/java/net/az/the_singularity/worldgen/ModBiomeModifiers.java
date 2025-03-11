@@ -16,6 +16,9 @@ public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_SINGULARITY_SHARD_ORE =
             registerKey("add_singularity_shard_ore");
 
+    public static final ResourceKey<BiomeModifier> ADD_ASTRALITE_ORE =
+            registerKey("add_astralite_ore");
+
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
         var biomes = context.lookup(Registries.BIOME);
@@ -23,6 +26,12 @@ public class ModBiomeModifiers {
         context.register(ADD_SINGULARITY_SHARD_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.SINGULARITY_SHARD_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES
+        ));
+
+        context.register(ADD_ASTRALITE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_END),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.ASTRALITE_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES
         ));
     }

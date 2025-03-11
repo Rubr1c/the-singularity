@@ -20,7 +20,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE).add(
-                ModBlocks.SINGULARITY_SHARD_ORE.get()
+                ModBlocks.SINGULARITY_SHARD_ORE.get(),
+                ModBlocks.ASTRALITE_ORE.get()
         );
 
     }

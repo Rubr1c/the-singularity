@@ -5,5 +5,9 @@
 
   "item.the_singularity.dark_repository": "Dark Repository",
 
-  "creative_tab.singularity": "Singularity"
+  "item.the_singularity.astralite_ore": "Astralite Ore",
+  "block.the_singularity.astralite_ore": "Astralite Ore",
+  "item.the_singularity.astralite_gem": "Astralite Gem",
+
+  "creative_tab.the_singularity.singularity": "Singularity"
 }
