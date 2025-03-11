@@ -35,7 +35,7 @@ public class DarkRepository extends Item {
     @Override
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
         ItemStack stack = pPlayer.getItemInHand(pUsedHand);
-        if (!pLevel.isClientSide()) {
+        if (!pLevel.isClientSide() && pPlayer.getY() <= -128) {
             CompoundTag tag = stack.getOrCreateTag();
             int current = tag.getInt("vStored");
             tag.putInt("vStored", current + 1);
