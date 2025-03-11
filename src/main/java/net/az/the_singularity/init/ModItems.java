@@ -1,6 +1,7 @@
 package net.az.the_singularity.init;
 
 import net.az.the_singularity.Singularity;
+import net.az.the_singularity.items.DarkRepository;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -21,6 +22,11 @@ public class ModItems {
     public static final RegistryObject<Item> DEEPSLATE_SINGULARITY_SHARD_ORE = create(
             "singularity_shard_ore",
             () -> new BlockItem(ModBlocks.SINGULARITY_SHARD_ORE.get(), new Item.Properties())
+    );
+
+    public static final RegistryObject<Item> DARK_REPOSITORY = create(
+            "dark_repository",
+            () -> new DarkRepository(new Item.Properties().stacksTo(1))
     );
 
     public static void register(IEventBus eventBus) {
