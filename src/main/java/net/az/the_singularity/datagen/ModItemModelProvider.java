@@ -32,12 +32,19 @@ public class ModItemModelProvider extends ItemModelProvider {
                       ));
 
         simpleItem(ModItems.ASTRALITE_GEM);
+        handheldItem(ModItems.ASTRALITE_PICKAXE);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(Singularity.MOD_ID, "item/" + item.getId().getPath()));
+    }
+
+    private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/handheld")).texture("layer0",
+                new ResourceLocation(Singularity.MOD_ID,"item/" + item.getId().getPath()));
     }
 
     private ItemModelBuilder itemWithState(RegistryObject<Item> item, List<String> predicates, List<List<Float>> variantValues) {

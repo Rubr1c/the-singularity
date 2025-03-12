@@ -2,8 +2,11 @@ package net.az.the_singularity.init;
 
 import net.az.the_singularity.Singularity;
 import net.az.the_singularity.items.DarkRepository;
+import net.az.the_singularity.items.ModTiers;
+import net.az.the_singularity.items.tools.AstralitePickaxe;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.PickaxeItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -37,6 +40,11 @@ public class ModItems {
     public static final RegistryObject<Item> ASTRALITE_ORE = create(
             "astralite_ore",
             () -> new BlockItem(ModBlocks.ASTRALITE_ORE.get(), new Item.Properties())
+    );
+
+    public static final RegistryObject<Item> ASTRALITE_PICKAXE = create(
+            "astralite_pickaxe",
+            () -> new AstralitePickaxe()
     );
 
     public static void register(IEventBus eventBus) {
