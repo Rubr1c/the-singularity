@@ -4,6 +4,8 @@ import net.az.the_singularity.Singularity;
 import net.az.the_singularity.blocks.AstraliteOre;
 import net.az.the_singularity.blocks.SingularityShardOre;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -22,6 +24,16 @@ public class ModBlocks {
     public static final RegistryObject<Block> ASTRALITE_ORE = BLOCKS.register(
             "astralite_ore",
             () -> new AstraliteOre()
+    );
+
+    public static final RegistryObject<Block> ASTRALITE_INFUSED_PURPUR_BLOCK = BLOCKS.register(
+        "astralite_infused_purpur_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PURPUR_BLOCK))
+    );
+
+    public static final RegistryObject<Block> ASTRALITE_INFUSED_PURPUR_PILLAR = BLOCKS.register(
+            "astralite_infused_purpur_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.PURPUR_PILLAR))
     );
 
     public static void register(IEventBus eventBus) {

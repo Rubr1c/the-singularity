@@ -4,9 +4,13 @@ import net.az.the_singularity.Singularity;
 import net.az.the_singularity.items.DarkRepository;
 import net.az.the_singularity.items.ModTiers;
 import net.az.the_singularity.items.tools.AstralitePickaxe;
+import net.az.the_singularity.items.tools.AstraliteSword;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -42,9 +46,29 @@ public class ModItems {
             () -> new BlockItem(ModBlocks.ASTRALITE_ORE.get(), new Item.Properties())
     );
 
+    public static final RegistryObject<Item> ASTRALITE_INFUSED_PURPUR_BLOCK = create(
+            "astralite_infused_purpur_block",
+            () -> new BlockItem(ModBlocks.ASTRALITE_INFUSED_PURPUR_BLOCK.get(), new Item.Properties())
+    );
+
+    public static final RegistryObject<Item> ASTRALITE_INFUSED_PURPUR_PILLAR = create(
+            "astralite_infused_purpur_pillar",
+            () -> new BlockItem(ModBlocks.ASTRALITE_INFUSED_PURPUR_PILLAR.get(), new Item.Properties())
+    );
+
     public static final RegistryObject<Item> ASTRALITE_PICKAXE = create(
             "astralite_pickaxe",
             () -> new AstralitePickaxe()
+    );
+
+    public static final RegistryObject<Item> ASTRALITE_SWORD = create(
+            "astralite_sword",
+            () -> new AstraliteSword()
+    );
+
+    public static final RegistryObject<Item> ASTRALITE_UPGRADE_SMITHING_TEMPLATE = create(
+            "astralite_upgrade_smithing_template",
+            () -> new Item(new Item.Properties())
     );
 
     public static void register(IEventBus eventBus) {

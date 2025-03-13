@@ -30,6 +30,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.ASTRALITE_ORE.get(),
                 block -> createOreDrop(ModBlocks.ASTRALITE_ORE.get(),
                                        ModItems.ASTRALITE_GEM.get()));
+
+        dropSelf(ModBlocks.ASTRALITE_INFUSED_PURPUR_BLOCK.get());
+        dropSelf(ModBlocks.ASTRALITE_INFUSED_PURPUR_PILLAR.get());
     }
 
     @Override

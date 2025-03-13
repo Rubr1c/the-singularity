@@ -33,6 +33,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleItem(ModItems.ASTRALITE_GEM);
         handheldItem(ModItems.ASTRALITE_PICKAXE);
+        handheldItem(ModItems.ASTRALITE_SWORD);
+        simpleItem(ModItems.ASTRALITE_UPGRADE_SMITHING_TEMPLATE);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

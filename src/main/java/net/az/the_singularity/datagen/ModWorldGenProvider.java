@@ -4,6 +4,9 @@ import net.az.the_singularity.Singularity;
 import net.az.the_singularity.worldgen.ModBiomeModifiers;
 import net.az.the_singularity.worldgen.ModConfiguredFeatures;
 import net.az.the_singularity.worldgen.ModPlacedFeatures;
+import net.az.the_singularity.worldgen.ModStructures;
+import net.az.the_singularity.worldgen.ModStructureSets;
+import net.az.the_singularity.worldgen.ModTemplatePools;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;
@@ -15,13 +18,16 @@ import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 
 public class ModWorldGenProvider extends DatapackBuiltinEntriesProvider {
-    public static final RegistrySetBuilder BUILDER  = new RegistrySetBuilder()
+    public static final RegistrySetBuilder BUILDER = new RegistrySetBuilder()
             .add(Registries.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap)
             .add(Registries.PLACED_FEATURE, ModPlacedFeatures::bootstrap)
-            .add(ForgeRegistries.Keys.BIOME_MODIFIERS, ModBiomeModifiers::bootstrap);
+            .add(ForgeRegistries.Keys.BIOME_MODIFIERS, ModBiomeModifiers::bootstrap)
+            .add(Registries.STRUCTURE, ModStructures::bootstrap)
+            .add(Registries.STRUCTURE_SET, ModStructureSets::bootstrap)
+            .add(Registries.TEMPLATE_POOL, ModTemplatePools::bootstrap);
 
     public ModWorldGenProvider(PackOutput output,
-                               CompletableFuture<HolderLookup.Provider> registries) {
-        super(output, registries, BUILDER,Set.of(Singularity.MOD_ID));
+            CompletableFuture<HolderLookup.Provider> registries) {
+        super(output, registries, BUILDER, Set.of(Singularity.MOD_ID));
     }
 }
