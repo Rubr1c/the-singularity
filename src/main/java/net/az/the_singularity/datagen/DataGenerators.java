@@ -36,5 +36,6 @@ public class DataGenerators {
                 new ModBiomeTagsProvider(packOutput, lookupProvider, existingFileHelper));
 
         generator.addProvider(event.includeServer(), new ModWorldGenProvider(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new ModLanguageProvider(packOutput, "en_us"));
     }
 }
