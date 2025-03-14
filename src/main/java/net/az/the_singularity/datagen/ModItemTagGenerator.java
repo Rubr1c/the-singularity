@@ -1,10 +1,12 @@
 package net.az.the_singularity.datagen;
 
 import net.az.the_singularity.Singularity;
+import net.az.the_singularity.init.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -19,6 +21,11 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-
+        tag(ItemTags.TRIMMABLE_ARMOR).add(
+                ModItems.ASTRALITE_HELMET.get(),
+                ModItems.ASTRALITE_CHESTPLATE.get(),
+                ModItems.ASTRALITE_LEGGINGS.get(),
+                ModItems.ASTRALITE_BOOTS.get()
+        );
     }
 }

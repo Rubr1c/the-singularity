@@ -61,7 +61,6 @@ public class AstraliteAxe extends AxeItem {
                 pos.south()
         );
     }
-
     private void mineX(TagKey<Block> tag,
                        ItemStack stack,
                        Level level,
