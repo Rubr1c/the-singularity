@@ -1,8 +1,6 @@
-package net.az.the_singularity.items;
+package net.az.the_singularity.init;
 
 import net.az.the_singularity.Singularity;
-import net.az.the_singularity.init.ModItems;
-import net.az.the_singularity.init.ModTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.Tiers;

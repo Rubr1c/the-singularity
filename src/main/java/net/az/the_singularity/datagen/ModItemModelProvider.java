@@ -34,6 +34,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.ASTRALITE_GEM);
         handheldItem(ModItems.ASTRALITE_PICKAXE);
         handheldItem(ModItems.ASTRALITE_SWORD);
+        handheldItem(ModItems.ASTRALITE_AXE);
+        handheldItem(ModItems.ASTRALITE_SHOVEL);
+        handheldItem(ModItems.ASTRALITE_HOE);
         simpleItem(ModItems.ASTRALITE_UPGRADE_SMITHING_TEMPLATE);
     }
 
@@ -56,7 +59,6 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         int variantIndex = 1;
 
-        // For each predicate in your list...
         for (int i = 0; i < predicates.size(); i++) {
             String predicateKey = predicates.get(i);
             for (Float threshold : variantValues.get(i)) {

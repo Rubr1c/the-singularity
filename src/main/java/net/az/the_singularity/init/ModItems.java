@@ -2,15 +2,9 @@ package net.az.the_singularity.init;
 
 import net.az.the_singularity.Singularity;
 import net.az.the_singularity.items.DarkRepository;
-import net.az.the_singularity.items.ModTiers;
-import net.az.the_singularity.items.tools.AstralitePickaxe;
-import net.az.the_singularity.items.tools.AstraliteSword;
+import net.az.the_singularity.items.tools.*;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.PickaxeItem;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -64,6 +58,21 @@ public class ModItems {
     public static final RegistryObject<Item> ASTRALITE_SWORD = create(
             "astralite_sword",
             () -> new AstraliteSword()
+    );
+
+    public static final RegistryObject<Item> ASTRALITE_AXE = create(
+            "astralite_axe",
+            () -> new AstraliteAxe()
+    );
+
+    public static final RegistryObject<Item> ASTRALITE_SHOVEL = create(
+            "astralite_shovel",
+            () -> new AstraliteShovel()
+    );
+
+    public static final RegistryObject<Item> ASTRALITE_HOE = create(
+            "astralite_hoe",
+            () -> new AstraliteHoe()
     );
 
     public static final RegistryObject<Item> ASTRALITE_UPGRADE_SMITHING_TEMPLATE = create(

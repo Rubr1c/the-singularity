@@ -46,9 +46,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         smithingSet(ModItems.ASTRALITE_UPGRADE_SMITHING_TEMPLATE.get(),
                     ModItems.ASTRALITE_GEM.get(),
                     Map.of(Items.NETHERITE_SWORD, ModItems.ASTRALITE_SWORD.get(),
-                           Items.NETHERITE_PICKAXE, ModItems.ASTRALITE_PICKAXE.get()
+                           Items.NETHERITE_PICKAXE, ModItems.ASTRALITE_PICKAXE.get(),
+                            Items.NETHERITE_SHOVEL, ModItems.ASTRALITE_SHOVEL.get()
                     ),
                     List.of(RecipeCategory.COMBAT,
+                            RecipeCategory.TOOLS,
                             RecipeCategory.TOOLS
                     ),
                     pWriter);

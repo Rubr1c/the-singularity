@@ -1,14 +1,12 @@
 package net.az.the_singularity.items.tools;
 
-import net.az.the_singularity.items.ModTiers;
+import net.az.the_singularity.init.ModTiers;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.PickaxeItem;
-import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
@@ -36,6 +34,9 @@ public class AstralitePickaxe extends PickaxeItem {
         if (!pLevel.isClientSide()) {
             if (pState.is(Tags.Blocks.ORES)) {
                 if (pLevel instanceof ServerLevel serverLevel) {
+                    int fortuneLevel = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BLOCK_FORTUNE, pStack);
+                    int silkTouchLevel = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH, pStack);
+
                     LootParams.Builder lootBuilder = new LootParams.Builder(serverLevel)
                             .withParameter(LootContextParams.ORIGIN, Vec3.atCenterOf(pPos))
                             .withParameter(LootContextParams.TOOL, pStack)
@@ -44,12 +45,19 @@ public class AstralitePickaxe extends PickaxeItem {
 
                     List<ItemStack> drops = pState.getDrops(lootBuilder);
 
+                    if (fortuneLevel > 0 && silkTouchLevel == 0) {
+                        for (int i = 0; i < drops.size(); i++) {
+                            ItemStack drop = drops.get(i);
+                            if (!drop.isEmpty()) {
+                                int bonusAmount = Math.max(0, pLevel.getRandom().nextInt(fortuneLevel + 2) - 1);
+                                drop.grow(bonusAmount);
+                            }
+                        }
+                    }
+
                     for (ItemStack drop : drops) {
                         Block.popResource(pLevel, pPos, drop);
                     }
-
-                    int fortuneLevel = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BLOCK_FORTUNE, pStack);
-                    int silkTouchLevel = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH, pStack);
 
                     int xpAmount = pState.getExpDrop(serverLevel, pLevel.getRandom(), pPos, fortuneLevel, silkTouchLevel);
                     if (xpAmount > 0) {
