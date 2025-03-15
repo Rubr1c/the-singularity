@@ -1,4 +1,4 @@
-package net.az.the_singularity.items.armor;
+package net.az.the_singularity.item.armor;
 
 import com.google.common.collect.ImmutableMap;
 import net.az.the_singularity.init.ModArmorMaterials;

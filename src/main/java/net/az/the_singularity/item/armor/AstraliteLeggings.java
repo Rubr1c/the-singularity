@@ -1,17 +1,17 @@
-package net.az.the_singularity.items.armor;
+package net.az.the_singularity.item.armor;
 
 import net.az.the_singularity.init.ModArmorMaterials;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 
-public class AstraliteBoots extends ModArmorItem {
+public class AstraliteLeggings extends ModArmorItem {
 
 
-    public AstraliteBoots() {
+    public AstraliteLeggings() {
         super(ModArmorMaterials.ASTRALITE,
-                Type.BOOTS,
+                Type.LEGGINGS,
                 new Properties(),
-                new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 220,
+                new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 220,
                         1, false, false, true));
     }
 }

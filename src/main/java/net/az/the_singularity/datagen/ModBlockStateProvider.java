@@ -7,6 +7,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -20,7 +21,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.SINGULARITY_SHARD_ORE);
         blockWithItem(ModBlocks.ASTRALITE_ORE);
         blockWithItem(ModBlocks.ASTRALITE_INFUSED_PURPUR_BLOCK);
+
         pillarBlock(ModBlocks.ASTRALITE_INFUSED_PURPUR_PILLAR);
+
+        simpleBlockWithItem(ModBlocks.ASTRAL_EXTRACTOR.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/astral_extractor")));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

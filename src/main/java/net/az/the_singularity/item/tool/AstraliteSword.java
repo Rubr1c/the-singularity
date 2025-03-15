@@ -1,4 +1,4 @@
-package net.az.the_singularity.items.tools;
+package net.az.the_singularity.item.tool;
 
 import net.az.the_singularity.init.ModTags;
 import net.az.the_singularity.init.ModTiers;
@@ -9,7 +9,6 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
@@ -19,9 +18,7 @@ import net.minecraft.world.entity.projectile.ThrownEnderpearl;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
-import net.minecraftforge.event.entity.EntityTeleportEvent;
 
 public class AstraliteSword extends SwordItem {
     public AstraliteSword() {

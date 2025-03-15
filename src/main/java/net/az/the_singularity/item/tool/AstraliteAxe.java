@@ -1,4 +1,4 @@
-package net.az.the_singularity.items.tools;
+package net.az.the_singularity.item.tool;
 
 import net.az.the_singularity.init.ModTiers;
 import net.minecraft.core.BlockPos;

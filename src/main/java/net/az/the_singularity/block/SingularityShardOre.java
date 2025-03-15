@@ -1,4 +1,4 @@
-package net.az.the_singularity.blocks;
+package net.az.the_singularity.block;
 
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.Blocks;

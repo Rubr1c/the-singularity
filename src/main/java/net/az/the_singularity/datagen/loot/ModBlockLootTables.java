@@ -3,15 +3,11 @@ package net.az.the_singularity.datagen.loot;
 import net.az.the_singularity.init.ModBlocks;
 import net.az.the_singularity.init.ModItems;
 import net.minecraft.data.loot.BlockLootSubProvider;
-import net.minecraft.world.flag.FeatureFlag;
-import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
-import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.Set;
@@ -33,6 +29,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         dropSelf(ModBlocks.ASTRALITE_INFUSED_PURPUR_BLOCK.get());
         dropSelf(ModBlocks.ASTRALITE_INFUSED_PURPUR_PILLAR.get());
+        dropSelf(ModBlocks.ASTRAL_EXTRACTOR.get());
     }
 
     @Override

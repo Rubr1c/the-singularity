@@ -1,0 +1,16 @@
+{
+  "type": "the_singularity:astral_extracting",
+  "fuel": {
+    "item": "minecraft:coal",
+    "count": 1
+  },
+  "ingredients": [
+    {
+      "item": "the_singularity:dark_repository"
+    }
+  ],
+  "output" : {
+    "item": "the_singularity:singularity_shard",
+    "count": 1
+  }
+}
