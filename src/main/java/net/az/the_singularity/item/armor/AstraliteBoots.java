@@ -1,6 +1,6 @@
 package net.az.the_singularity.item.armor;
 
-import net.az.the_singularity.init.ModArmorMaterials;
+import net.az.the_singularity.item.armor.material.ModArmorMaterials;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 

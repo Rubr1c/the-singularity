@@ -1,7 +1,7 @@
 package net.az.the_singularity.datagen;
 
 import net.az.the_singularity.Singularity;
-import net.az.the_singularity.init.ModItems;
+import net.az.the_singularity.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;

@@ -1,6 +1,6 @@
 package net.az.the_singularity.item.tool;
 
-import net.az.the_singularity.init.ModTiers;
+import net.az.the_singularity.item.tool.tier.ModTiers;
 import net.az.the_singularity.world.WorldUtil;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;

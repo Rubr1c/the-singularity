@@ -1,4 +1,4 @@
-package net.az.the_singularity.block;
+package net.az.the_singularity.block.base;
 
 import net.az.the_singularity.block.entity.AstralExtractorBlockEntity;
 import net.az.the_singularity.block.entity.ModBlockEntities;

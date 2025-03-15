@@ -1,4 +1,4 @@
-package net.az.the_singularity.compat;
+package net.az.the_singularity.compatability;
 
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
@@ -7,7 +7,7 @@ import mezz.jei.api.registration.IRecipeCategoryRegistration;
 import mezz.jei.api.registration.IRecipeRegistration;
 import net.az.the_singularity.Singularity;
 import net.az.the_singularity.recipe.AstralExtractingRecipe;
-import net.az.the_singularity.screen.AstralExtractorScreen;
+import net.az.the_singularity.gui.screen.AstralExtractorScreen;
 import net.minecraft.client.Minecraft;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.crafting.RecipeManager;

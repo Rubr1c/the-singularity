@@ -1,6 +1,7 @@
-package net.az.the_singularity.screen;
+package net.az.the_singularity.gui;
 
 import net.az.the_singularity.Singularity;
+import net.az.the_singularity.gui.menu.AstralExtractorMenu;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraftforge.common.extensions.IForgeMenuType;

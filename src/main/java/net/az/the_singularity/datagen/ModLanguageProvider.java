@@ -1,9 +1,9 @@
 package net.az.the_singularity.datagen;
 
 import net.az.the_singularity.Singularity;
-import net.az.the_singularity.init.ModBlocks;
-import net.az.the_singularity.init.ModItems;
-import net.az.the_singularity.init.ModTabs;
+import net.az.the_singularity.block.ModBlocks;
+import net.az.the_singularity.item.ModItems;
+import net.az.the_singularity.creative.ModTabs;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;

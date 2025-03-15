@@ -1,4 +1,4 @@
-package net.az.the_singularity.worldgen;
+package net.az.the_singularity.worldgen.util;
 
 import net.minecraft.world.level.levelgen.placement.*;
 

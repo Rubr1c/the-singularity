@@ -1,8 +1,7 @@
 package net.az.the_singularity.block.entity;
 
 import net.az.the_singularity.Singularity;
-import net.az.the_singularity.init.ModBlocks;
-import net.minecraft.world.level.block.entity.BlockEntity;
+import net.az.the_singularity.block.ModBlocks;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;

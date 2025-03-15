@@ -1,4 +1,4 @@
-package net.az.the_singularity.block;
+package net.az.the_singularity.block.ore;
 
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.DropExperienceBlock;

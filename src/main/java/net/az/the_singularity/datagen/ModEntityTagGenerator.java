@@ -1,7 +1,7 @@
 package net.az.the_singularity.datagen;
 
 import net.az.the_singularity.Singularity;
-import net.az.the_singularity.init.ModTags;
+import net.az.the_singularity.tags.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.EntityTypeTagsProvider;

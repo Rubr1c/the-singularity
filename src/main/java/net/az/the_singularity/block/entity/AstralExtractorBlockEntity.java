@@ -1,7 +1,7 @@
 package net.az.the_singularity.block.entity;
 
 import net.az.the_singularity.recipe.AstralExtractingRecipe;
-import net.az.the_singularity.screen.AstralExtractorMenu;
+import net.az.the_singularity.gui.menu.AstralExtractorMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;

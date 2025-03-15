@@ -1,7 +1,7 @@
 package net.az.the_singularity.datagen.loot;
 
-import net.az.the_singularity.init.ModBlocks;
-import net.az.the_singularity.init.ModItems;
+import net.az.the_singularity.block.ModBlocks;
+import net.az.the_singularity.item.ModItems;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;

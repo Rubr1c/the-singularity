@@ -1,12 +1,12 @@
 package net.az.the_singularity;
 
 import net.az.the_singularity.block.entity.ModBlockEntities;
-import net.az.the_singularity.init.ModBlocks;
-import net.az.the_singularity.init.ModItems;
-import net.az.the_singularity.init.ModTabs;
+import net.az.the_singularity.block.ModBlocks;
+import net.az.the_singularity.item.ModItems;
+import net.az.the_singularity.creative.ModTabs;
 import net.az.the_singularity.recipe.ModRecipes;
-import net.az.the_singularity.screen.AstralExtractorScreen;
-import net.az.the_singularity.screen.ModMenuTypes;
+import net.az.the_singularity.gui.screen.AstralExtractorScreen;
+import net.az.the_singularity.gui.ModMenuTypes;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -35,11 +35,4 @@ public class Singularity {
         MinecraftForge.EVENT_BUS.register(this);
     }
 
-    @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientModEvents {
-        @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event) {
-            MenuScreens.register(ModMenuTypes.ASTRAL_EXTRACTOR_MENU.get(), AstralExtractorScreen::new);
-        }
-    }
 }

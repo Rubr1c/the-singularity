@@ -1,6 +1,7 @@
-package net.az.the_singularity.init;
+package net.az.the_singularity.item.armor.material;
 
 import net.az.the_singularity.Singularity;
+import net.az.the_singularity.item.ModItems;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.ArmorItem;

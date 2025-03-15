@@ -1,8 +1,8 @@
 package net.az.the_singularity.datagen;
 
 import net.az.the_singularity.Singularity;
-import net.az.the_singularity.init.ModBlocks;
-import net.az.the_singularity.init.ModItems;
+import net.az.the_singularity.block.ModBlocks;
+import net.az.the_singularity.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Item;

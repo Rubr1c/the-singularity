@@ -1,4 +1,4 @@
-package net.az.the_singularity.item;
+package net.az.the_singularity.item.custom;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;

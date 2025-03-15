@@ -1,7 +1,8 @@
-package net.az.the_singularity.screen;
+package net.az.the_singularity.gui.menu;
 
 import net.az.the_singularity.block.entity.AstralExtractorBlockEntity;
-import net.az.the_singularity.init.ModBlocks;
+import net.az.the_singularity.block.ModBlocks;
+import net.az.the_singularity.gui.ModMenuTypes;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;

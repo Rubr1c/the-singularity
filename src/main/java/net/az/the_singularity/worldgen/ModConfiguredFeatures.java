@@ -1,7 +1,7 @@
 package net.az.the_singularity.worldgen;
 
 import net.az.the_singularity.Singularity;
-import net.az.the_singularity.init.ModBlocks;
+import net.az.the_singularity.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.resources.ResourceKey;

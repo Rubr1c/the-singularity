@@ -1,4 +1,4 @@
-package net.az.the_singularity.worldgen;
+package net.az.the_singularity.worldgen.structure;
 
 import net.az.the_singularity.Singularity;
 import net.minecraft.core.HolderGetter;
@@ -10,8 +10,6 @@ import net.minecraft.world.level.levelgen.structure.Structure;
 import net.minecraft.world.level.levelgen.structure.StructureSet;
 import net.minecraft.world.level.levelgen.structure.placement.RandomSpreadStructurePlacement;
 import net.minecraft.world.level.levelgen.structure.placement.RandomSpreadType;
-
-import java.util.List;
 
 public class ModStructureSets {
     public static final ResourceKey<StructureSet> ASTRALITE_TEMPLE = registerKey("astralite_temple");

@@ -1,7 +1,7 @@
 package net.az.the_singularity.item.tool;
 
-import net.az.the_singularity.init.ModTags;
-import net.az.the_singularity.init.ModTiers;
+import net.az.the_singularity.tags.ModTags;
+import net.az.the_singularity.item.tool.tier.ModTiers;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.Holder;
 import net.minecraft.core.particles.ParticleTypes;

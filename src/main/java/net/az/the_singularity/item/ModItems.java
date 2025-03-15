@@ -1,13 +1,13 @@
-package net.az.the_singularity.init;
+package net.az.the_singularity.item;
 
 import net.az.the_singularity.Singularity;
-import net.az.the_singularity.item.DarkRepository;
+import net.az.the_singularity.creative.ModTabs;
 import net.az.the_singularity.item.armor.AstraliteBoots;
 import net.az.the_singularity.item.armor.AstraliteChestplate;
 import net.az.the_singularity.item.armor.AstraliteHelmet;
 import net.az.the_singularity.item.armor.AstraliteLeggings;
+import net.az.the_singularity.item.custom.DarkRepository;
 import net.az.the_singularity.item.tool.*;
-import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;

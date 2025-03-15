@@ -1,6 +1,7 @@
 package net.az.the_singularity.worldgen;
 
 import net.az.the_singularity.Singularity;
+import net.az.the_singularity.worldgen.util.ModOrePlacement;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;

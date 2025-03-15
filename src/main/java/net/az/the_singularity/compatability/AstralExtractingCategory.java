@@ -1,4 +1,4 @@
-package net.az.the_singularity.compat;
+package net.az.the_singularity.compatability;
 
 import mezz.jei.api.constants.VanillaTypes;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
@@ -9,7 +9,7 @@ import mezz.jei.api.recipe.RecipeIngredientRole;
 import mezz.jei.api.recipe.RecipeType;
 import mezz.jei.api.recipe.category.IRecipeCategory;
 import net.az.the_singularity.Singularity;
-import net.az.the_singularity.init.ModBlocks;
+import net.az.the_singularity.block.ModBlocks;
 import net.az.the_singularity.recipe.AstralExtractingRecipe;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;

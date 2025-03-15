@@ -1,4 +1,4 @@
-package net.az.the_singularity.worldgen;
+package net.az.the_singularity.worldgen.structure;
 
 import com.mojang.datafixers.util.Pair;
 import net.az.the_singularity.Singularity;

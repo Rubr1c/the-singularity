@@ -1,9 +1,10 @@
-package net.az.the_singularity.init;
+package net.az.the_singularity.block;
 
 import net.az.the_singularity.Singularity;
-import net.az.the_singularity.block.AstraliteOre;
-import net.az.the_singularity.block.AstralExtractor;
-import net.az.the_singularity.block.SingularityShardOre;
+import net.az.the_singularity.block.base.AstralExtractor;
+import net.az.the_singularity.block.ore.AstraliteOre;
+import net.az.the_singularity.block.ore.SingularityShardOre;
+import net.az.the_singularity.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;

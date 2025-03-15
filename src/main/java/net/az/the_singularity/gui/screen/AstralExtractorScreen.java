@@ -1,7 +1,8 @@
-package net.az.the_singularity.screen;
+package net.az.the_singularity.gui.screen;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.az.the_singularity.Singularity;
+import net.az.the_singularity.gui.menu.AstralExtractorMenu;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.renderer.GameRenderer;
